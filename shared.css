@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.5;
+
+  /* native font stack - see: https://systemfontstack.com/  */
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+code {
+  /* native font stack - see: https://systemfontstack.com/  */
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
+.container {
+  padding: 1em;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+/* TODO: perhaps add a media query here, though they don't learn this :( */
+.text-prose {
+  max-width: 65ch;
+}
+
+.styled-dl dd + dt {
+  margin-top: 0.5em;
+}

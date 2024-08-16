@@ -1,0 +1,32 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#centerfold {
+  background-color: aliceblue;
+  padding: 2rem;
+  text-align: center;
+}
+
+#colour-message {
+  display: inline-flex;
+
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.25em;
+}
+
+.colour-circle {
+  height: 1em;
+  width: 1em;
+
+  align-self: center;
+  display: inline-block;
+
+  border-radius: 100rem;
+}
