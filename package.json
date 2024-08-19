@@ -1,0 +1,12 @@
+{
+  "name": "assp-bridge",
+  "version": "1.0.0",
+  "description": "tinkering for assp bridge!",
+  "devDependencies": {
+    "stylelint": "15.11.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint *.css **/*.css"
+  },
+  "license": "Apache-2.0"
+}

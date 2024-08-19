@@ -1,43 +1,52 @@
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 
-  line-height: 1.5;
-
-  /* native font stack - see: https://systemfontstack.com/  */
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    /* native font stack - see: https://systemfontstack.com/  */
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "avenir next",
+        "avenir",
+        "segoe ui",
+        "helvetica neue",
+        "helvetica",
+        "Cantarell",
+        "Ubuntu",
+        "roboto",
+        "noto",
+        "arial",
+        sans-serif;
 }
 
 #app {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .prose {
-  padding: 0 1rem;
-  width: 100%;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 .form-group {
-  margin: 0.75em 0;
+    margin: 0.75em 0;
 }
 
 .colour-message {
-  display: flex;
-  padding: 0.25em;
+    display: flex;
+    padding: 0.25em;
 }
 
 .colour-circle {
-  height: 1em;
-  width: 1em;
-
-  align-self: center;
-  display: inline-block;
-
-  border-radius: 100rem;
+    height: 1em;
+    width: 1em;
+    align-self: center;
+    display: inline-block;
+    border-radius: 100rem;
 }
