@@ -39,7 +39,9 @@ window.onload = (_) => {
   }
 
   document.getElementById('reset').onclick = function() {
+    document.getElementById('rolls').innerHTML = "";
     document.getElementById('num-rolls').innerHTML = 0;
     document.getElementById('score').innerHTML = 0;
+    document.getElementById('ratio').innerHTML = "_";
   }
 }
