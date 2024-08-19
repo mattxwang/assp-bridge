@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Compound Interest Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+  </head>
+  <body id="app">
+    <article class="prose">
+      <header>
+        <h1>Compound Interest Calculator</h1>
+        <p>Given a financial goal and your current amount of money, tells you how much time you need to invest in advance (with different interest rates).</p>
+      </header>
+      <hr>
+      <section>
+        <h2>Financial Goals</h2>
+        <form id="calculator">
+          <div class="form-group">
+            <label for="principal">principal (how much money you have now):</label>
+            <input type="number" id="principal" value="1">
+          </div>
+          <div class="form-group">
+            <label for="final">goal (how much money you want):</label>
+            <input type="number" id="final" value="1000">
+          </div>
+          <button type="submit">generate savings plan</button>
+        </form>
+      </section>
+      <section id="report">
+        <h2>Savings Report</h2>
+      </section>
+      <hr>
+      <footer>
+        <p>
+          by <a href="https://mattx.wang">matt</a>
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Colo(u)r Contrast Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+  </head>
+  <body id="app">
+    <article class="prose">
+      <header>
+        <h1>Colo(u)r Contrast Checker</h1>
+        <p>Calculates the <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">WCAG 2.1 contrast ratio</a> between two colors.</p>
+      </header>
+      <hr>
+      <section>
+        <h2>Your Colo(u)rs Here!</h2>
+        <form id="calculator">
+          <div class="form-group">
+            <label for="color1">colo(u)r 1:</label>
+            <input type="color" id="color1" value="#8ACE00">
+          </div>
+          <div class="form-group">
+            <label for="color2">colo(u)r 2:</label>
+            <input type="color" id="color2" value="#000000">
+          </div>
+          <button type="submit">calculate contrast</button>
+        </form>
+      </section>
+      <section id="report">
+        <h2>Contrast Report</h2>
+      </section>
+      <hr>
+      <footer>
+        <p>
+          by <a href="https://mattx.wang">matt</a>
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
