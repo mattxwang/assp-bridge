@@ -34,3 +34,13 @@ code {
 .styled-dl dd + dt {
   margin-top: 0.5em;
 }
+
+.link-brat, .link-brat:visited {
+  color: black;
+  font-family: 'Arial Narrow', 'Arial', sans-serif;
+  text-decoration-color: #8ACE00;
+}
+
+.link-brat:hover {
+  background-color: #8ACE00;
+}

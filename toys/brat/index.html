@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>brat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../shared.css">
+    <link rel="stylesheet" href="brat.css">
+    <script src="brat.js"></script>
+  </head>
+  <body>
+    <article id="app">
+      <div id="brat-sidebar">
+        <header>
+          <h1>brat</h1>
+          <p>(the brat box is editable)</p>
+        </header>
+        <label for="brat-color">background color (updates live)</label>
+        <br>
+        <input type="text" id="brat-color" value="#8ACE00">
+        <button id="delete-sidebar">delete this sidebar</button>
+        <hr>
+        <footer>
+          <p>
+            all &copy; belongs to charli xcx &amp; atlantic records;<br>reproducing for educational purposes
+          </p>
+          <hr>
+          <p>
+            by <a href="https://mattx.wang">matt</a>
+            |
+            <a href="../">play with other toys</a>
+          </p>
+        </footer>
+      </div>
+      <div id="brat-container">
+        <div id="brat" contenteditable="true" spellcheck="false" style="font-size: 20vw;">brat</div>
+      </div>
+    </article>
+  </body>
+</html>
