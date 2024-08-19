@@ -18,3 +18,19 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@2a593a9f2c10593cbac84791a6fc4c47e9a106c8
         with:
           root: "."
+  lint:
+    name: Lint (CSS)
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run lint:css
