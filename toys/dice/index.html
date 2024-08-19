@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../shared.css">
+    <link rel="stylesheet" href="dice.css">
+    <script src="dice.js"></script>
+  </head>
+  <body>
+    <article id="app">
+      <div class="prose">
+        <header>
+          <h1>dynamic dice</h1>
+          <p>Let's play a game! How many times can you roll two dice until their faces sum to 7? And, can we discover an interesting relationship between the total sums and the total number of rolls?</p>
+        </header>
+        <hr>
+        <section>
+          <h2>rolls</h2>
+          <button id="play">play</button>
+          <button id="reset">reset game</button>
+          sum: <span id="score">0</span> |
+          rolls: <span id="num-rolls">0</span> |
+          ratio: <span id="ratio">_</span>
+          <ol id="rolls"></ol>
+        </section>
+        <hr>
+        <footer>
+          <p>
+            by <a href="https://mattx.wang">matt</a>
+            |
+            <a href="../">play with other toys</a>
+          </p>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
