@@ -30,23 +30,24 @@ body {
 }
 
 .prose {
+    max-width: 65ch;
     padding: 0 1rem;
-    width: 100%;
 }
 
-.form-group {
-    margin: 0.75em 0;
+table {
+    border-collapse: collapse;
+    border: 1px solid #333;
+    margin: 0 auto;
+    min-width: 50%;
+    text-align: left;
 }
 
-.colour-message {
-    display: flex;
-    padding: 0.25em;
+th, td {
+    border: 1px solid #444;
+    padding: 0.5em 0.75em;
 }
 
-.colour-circle {
-    height: 1em;
-    width: 1em;
-    align-self: center;
-    display: inline-block;
-    border-radius: 100rem;
+caption {
+    caption-side: bottom;
+    padding: 1em;
 }
