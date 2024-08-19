@@ -38,4 +38,28 @@ window.onload = (_) => {
     "<span class='colour-circle' style='" + bgStyleStr +  "'></span>";
   document.getElementById('colour-message').innerHTML += "&nbsp";
   document.getElementById('colour-message').innerHTML += randomColor;
+
+  // this portion is out of scope of the class - just intended to be fun!
+  changeFavicon(randomColor);
+}
+
+// This uses an API called canvas to make the favicon (the icon in your
+// tab) the random color. This is out of scope of the class - just
+// a neat little touch :)
+function changeFavicon(randomColor) {
+  let canvas = document.createElement('canvas');
+  canvas.height = 64;
+  canvas.width = 64;
+
+  let ctx = canvas.getContext('2d');
+  ctx.beginPath();
+  ctx.fillStyle = randomColor;
+  ctx.rect(0, 0, 64, 64);
+  ctx.fill();
+
+  let link = document.createElement('link');
+  link.id = 'favicon';
+  link.rel = 'shortcut icon';
+  link.href = canvas.toDataURL();
+  document.head.appendChild(link);
 }
