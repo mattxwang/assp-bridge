@@ -1,0 +1,22 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0.75em 0;
+}
+
+#volume-answer {
+  margin: 1em 0;
+
+  text-align: center;
+  font-weight: bold;
+}

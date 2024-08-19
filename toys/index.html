@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>toy websites</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../shared.css">
   </head>
   <body>
@@ -12,6 +14,34 @@
       <p>
         This is a list of toy websites made for the Allen Scholars' Summer Bridge Program. Each toy website accomplishes one thing; they are reminiscent of early <a href="https://en.wikipedia.org/wiki/Web_2.0#Web_1.0">Web 1.0 pages</a>. They also intentionally use the limited subset of HTML, CSS, and JavaScript taught in the first two weeks of the summer bridge class.
       </p>
+      <hr>
+      <section>
+        <h2><a href="baking/">baking</a></h2>
+        <p>
+          Convert between different units of volume commonly used in baking.
+        </p>
+        <p>
+          Used in: Lesson ??. Worked example introducing <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>,  and <code>&lt;select&gt;</code>.
+        </p>
+        <details>
+          <summary>
+            Core skills &amp; extensions (click to expand)
+          </summary>
+          <dl class="styled-dl">
+            <dt>HTML &amp; CSS skills</dt>
+            <dd>New: <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>,  and <code>&lt;select&gt;</code> elements.</dd>
+            <dd>Review: general page structure, classes &amp; IDs, box model, flexbox.</dd>
+            <dt>JS skills</dt>
+            <dd>New: getting value(s) from form elements, conditional statements.</dd>
+            <dd>Review: modifying the DOM, arithmetic and string operators, variables, <code>Math.round()</code>, writing functions with parameters and return values.</dd>
+            <dt>Math skills</dt>
+            <dd>New: integer division.</dd>
+            <dt>Potential extensions</dt>
+            <dd>Simple: add more units, user-specified rounding, don't pluralize unit when value is 1.</dd>
+            <dd>Advanced: let the user paste in a recipe and replace the units in the text (requires <code>&lt;textarea&gt;</code> and string search and replace).</dd>
+          </dl>
+        </details>
+      </section>
       <hr>
       <section>
         <h2><a href="colours/">colours</a></h2>
@@ -27,13 +57,15 @@
           </summary>
           <dl class="styled-dl">
             <dt>HTML &amp; CSS skills</dt>
-            <dd>General page structure, classes &amp; IDs, box model, flexbox.</dd>
+            <dd>Review: general page structure, classes &amp; IDs, box model, flexbox.</dd>
             <dt>JS skills</dt>
-            <dd>Modifying the DOM, arithmetic and string operators, variables, the <code>Math</code> library, calling functions, writing functions with parameters and return values.</dd>
+            <dd>New: <code>Math.random()</code>, <code>Math.floor()</code>, modulo.</dd>
+            <dd>Review: modifying the DOM, arithmetic and string operators, variables, calling functions, writing functions with parameters and return values.</dd>
             <dt>Math skills</dt>
-            <dd>Generating random numbers, hexadecimal, manipulating intervals, remainders.</dd>
+            <dd>New: Generating random numbers, hexadecimal, manipulating intervals, remainders.</dd>
             <dt>Potential extensions</dt>
-            <dd>Add button to regenerate the colour without refreshing the page, add button copy the colour to user's clipboard, display message when JavaScript is disabled.</dd>
+            <dd>Simple: add button to regenerate colour and/or copy hex code to clipboard.</dd>
+            <dd>Advanced: toggle between different colour spaces and/or formats (e.g. RGBA, HSL, LCH; see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">the CSS color data type</a>)</dd>
           </dl>
         </details>
       </section>

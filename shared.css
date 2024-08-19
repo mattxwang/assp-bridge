@@ -22,6 +22,10 @@ code {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* TODO: perhaps add a media query here, though they don't learn this :( */
 .text-prose {
   max-width: 65ch;
