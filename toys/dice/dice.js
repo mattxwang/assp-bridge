@@ -1,20 +1,19 @@
 function to2DecPlaces(num) {
-  return Math.round(num * 100) / 100;
+  return Math.floor(num * 100) / 100;
 }
 
 function rollDice(sides) {
-  return Math.round(Math.random() * sides) + 1;
+  return Math.floor(Math.random() * sides) + 1;
 }
 
 function playGame(sides) {
-  let rolls = document.getElementById('rolls');
+  let rolls = document.getElementById("rolls");
 
   let seenSeven = false;
-  let numRolls = Number(document.getElementById('num-rolls').innerHTML);
-  let score = Number(document.getElementById('score').innerHTML);
+  let numRolls = Number(document.getElementById("num-rolls").innerHTML);
+  let score = Number(document.getElementById("score").innerHTML);
 
   while (!seenSeven) {
-
     let r1 = rollDice(sides);
     let r2 = rollDice(sides);
     numRolls += 2;
@@ -27,21 +26,20 @@ function playGame(sides) {
     }
   }
 
-  document.getElementById('num-rolls').innerHTML = numRolls;
-  document.getElementById('score').innerHTML = score;
-  document.getElementById('ratio').innerHTML = to2DecPlaces(score/numRolls);
+  document.getElementById("num-rolls").innerHTML = numRolls;
+  document.getElementById("score").innerHTML = score;
+  document.getElementById("ratio").innerHTML = to2DecPlaces(score / numRolls);
 }
-
 
 window.onload = (_) => {
-  document.getElementById('play').onclick = function() {
+  document.getElementById("play").onclick = function () {
     playGame(6);
-  }
+  };
 
-  document.getElementById('reset').onclick = function() {
-    document.getElementById('rolls').innerHTML = "";
-    document.getElementById('num-rolls').innerHTML = 0;
-    document.getElementById('score').innerHTML = 0;
-    document.getElementById('ratio').innerHTML = "_";
-  }
-}
+  document.getElementById("reset").onclick = function () {
+    document.getElementById("rolls").innerHTML = "";
+    document.getElementById("num-rolls").innerHTML = 0;
+    document.getElementById("score").innerHTML = 0;
+    document.getElementById("ratio").innerHTML = "_";
+  };
+};
