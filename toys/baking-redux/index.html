@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>baking (redux)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../shared.css">
+    <link rel="stylesheet" href="baking.css">
+    <script src="conversions.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <article id="app">
+      <div>
+        <header>
+          <h1>🍞🧁🎂 baking converter (redux)</h1>
+          <p>because what even is a <s>kilometer</s> quart???</p>
+          <p>note: this calculator rounds to the nearest hundredths place.</p>
+        </header>
+        <hr>
+        <section>
+          <h2>volume</h2>
+          <form id="volume-form">
+            <div class="form-group">
+              <label for="volume-input-unit">input unit:</label>
+              <select id="volume-input-unit">
+                <option value="tsp">teaspoon (tsp)</option>
+                <option value="tbsp">tablespoon (tbsp)</option>
+                <option value="cup">cup</option>
+                <option value="pint">pint</option>
+                <option value="quart">quart</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="volume-quantity">input volume:</label>
+              <input type="number" id="volume-quantity" value="0" step="any">
+            </div>
+            <div class="form-group">
+              <label for="volume-output-unit">output unit:</label>
+              <select id="volume-output-unit">
+                <option value="tsp">teaspoon (tsp)</option>
+                <option value="tbsp">tablespoon (tbsp)</option>
+                <option value="cup">cup</option>
+                <option value="pint">pint</option>
+                <option value="quart">quart</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <button type="submit">convert volume</button>
+            </div>
+            <div id="volume-answer">Try a calculation!</div>
+          </form>
+        </section>
+        <hr>
+        <section>
+          <p><a href="history.html">conversion history</a></p>
+        </section>
+        <hr>
+        <footer>
+          <p>
+            by <a href="https://mattx.wang">matt</a>
+            |
+            <a href="../">play with other toys</a>
+          </p>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>

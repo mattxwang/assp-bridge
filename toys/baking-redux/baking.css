@@ -1,0 +1,31 @@
+#app {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75em 0;
+}
+
+#volume-answer {
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#clear-history-button {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#clear-history-button:hover {
+    background-color: red;
+    color: white;
+}
