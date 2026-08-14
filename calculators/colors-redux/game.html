@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <script src="shared.js"></script>
-        <script src="history.js"></script>
+        <script src="game.js"></script>
     </head>
     <body>
         <div>
@@ -20,7 +20,34 @@
                     </ul>
                 </nav>
             </header>
-            <main class="prose">coming soon!</main>
+            <main class="prose">
+                <section>
+                    <h2>game</h2>
+                    <p>
+                        does this color combination have "good" colour contrast (WCAG 2.1 AA contrast >= 4.5)?
+                    </p>
+                    <p id="sample-text">
+
+                    </p>
+                    <div id="game-controls">
+                        <button id="yes-btn">yes</button>
+                        <button id="no-btn">no</button>
+                        <button id="next-btn">next color</button>
+                    </div>
+                </section>
+                <section>
+                    <h2>stats</h2>
+                    <dl>
+                        <dt>correct</dt>
+                        <dd>0</dd>
+                        <dt>incorrect</dt>
+                        <dd>0</dd>
+                        <dt>win %</dt>
+                        <dd>n/a</dd>
+                    </dl>
+                    <button id="clear-history-button">clear history</button>
+                </section>
+            </main>
             <hr>
             <footer class="prose">
                 <p>by <a href="https://mattx.wang">matt</a></p>

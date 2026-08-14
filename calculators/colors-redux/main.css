@@ -81,3 +81,8 @@ ul {
 #past-colors > li {
     margin-bottom: 1rem;
 }
+
+#sample-text {
+    padding: 2rem;
+    font-size: 2rem;
+}
