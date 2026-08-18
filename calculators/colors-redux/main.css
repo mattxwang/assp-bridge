@@ -22,10 +22,9 @@ body {
 }
 
 #app {
-    width: 100vw;
+    max-width: 768px;
+    margin: 0 auto;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
 .prose {
@@ -56,13 +55,9 @@ body {
 
 .nav-links ul {
     padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .nav-links li {
-    display: inline-block;
     list-style: none;
 }
 
@@ -83,6 +78,93 @@ ul {
 }
 
 #sample-text {
+    margin: 1rem 0;
     padding: 2rem;
     font-size: 2rem;
+}
+
+.block-button {
+    font-size: 1.5 rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+}
+
+.block-button:hover {
+    cursor: pointer;
+}
+
+#game-controls {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.game-button {
+    font-size: 1.5 rem;
+    padding: 0.5rem;
+}
+
+#info-box .game-button {
+    background: none;
+    border-width: 4px;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+#yes-btn {
+    border-color: #8ace00;
+}
+
+#yes-btn:hover {
+    background-color: #8ace00;
+    cursor: pointer;
+}
+
+#no-btn {
+    border-color: red;
+}
+
+#no-btn:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 400px) {
+    #info-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #color-inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-2-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }

@@ -8,15 +8,15 @@
         <script src="shared.js"></script>
         <script src="game.js"></script>
     </head>
-    <body>
+    <body id="app">
         <div>
             <header class="navbar">
                 <h1>cooler colours</h1>
                 <nav class="nav-links">
                     <ul>
                         <li><a href="index.html">Home / Calculator</a></li>
-                        <li><a href="history.html">Past Colors</a></li>
                         <li><a href="game.html">Game</a></li>
+                        <li><a href="data.html">History / Data</a></li>
                     </ul>
                 </nav>
             </header>
@@ -24,28 +24,37 @@
                 <section>
                     <h2>game</h2>
                     <p>
-                        does this color combination have "good" colour contrast (WCAG 2.1 AA contrast >= 4.5)?
+                        does this color combination have "good" colour contrast (WCAG 2.1 contrast
+                        >= 4.5)?
                     </p>
-                    <p id="sample-text">
-
-                    </p>
-                    <div id="game-controls">
-                        <button id="yes-btn">yes</button>
-                        <button id="no-btn">no</button>
-                        <button id="next-btn">next color</button>
+                    <div class="grid-2-md">
+                        <p id="sample-text"></p>
+                        <div id="game-controls">
+                            <div id="info-box">
+                                <button class="block-button game-button" id="yes-btn">
+                                    good contrast
+                                </button>
+                                <button class="block-button game-button" id="no-btn">
+                                    bad contrast
+                                </button>
+                            </div>
+                            <div id="result-box"></div>
+                            <button class="block-button game-button" id="next-btn">
+                                next color
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <section>
                     <h2>stats</h2>
-                    <dl>
+                    <dl class="stats">
                         <dt>correct</dt>
-                        <dd>0</dd>
+                        <dd id="num-correct">loading...</dd>
                         <dt>incorrect</dt>
-                        <dd>0</dd>
+                        <dd id="num-wrong">loading...</dd>
                         <dt>win %</dt>
-                        <dd>n/a</dd>
+                        <dd id="win-pct">loading...</dd>
                     </dl>
-                    <button id="clear-history-button">clear history</button>
                 </section>
             </main>
             <hr>

@@ -38,6 +38,7 @@ function loadPastConversions() {
 
 window.onload = (_) => {
     loadPastConversions();
+    updateGameStats();
 
     document.getElementById("clear-history-button").onclick = function (e) {
         window.localStorage.clear();

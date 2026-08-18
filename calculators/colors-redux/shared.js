@@ -71,6 +71,22 @@ function generateColorMessage(color, wrapper) {
     return message;
 }
 
+function updateGameStats() {
+    const numCorrect = Number(window.localStorage.getItem("numCorrect"));
+    const numWrong = Number(window.localStorage.getItem("numWrong"));
+
+    if (numCorrect === 0 && numWrong === 0) {
+        document.getElementById("num-correct").innerHTML = 0;
+        document.getElementById("num-wrong").innerHTML = 0;
+        document.getElementById("win-pct").innerHTML = "n/a";
+    } else {
+        document.getElementById("num-correct").innerHTML = numCorrect;
+        document.getElementById("num-wrong").innerHTML = numWrong;
+        document.getElementById("win-pct").innerHTML =
+            to4DecPlaces((numCorrect / (numCorrect + numWrong)) * 100) + "%";
+    }
+}
+
 function appendToLocalStorage(key, value) {
     if (window.localStorage.getItem(key) === null) {
         // Key doesn't exist; create an array with just value.

@@ -6,32 +6,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <script src="shared.js"></script>
-        <script src="history.js"></script>
+        <script src="data.js"></script>
     </head>
-    <body>
+    <body id="app">
         <div>
             <header class="navbar">
                 <h1>cooler colours</h1>
                 <nav class="nav-links">
                     <ul>
                         <li><a href="index.html">Home / Calculator</a></li>
-                        <li><a href="history.html">Past Colors</a></li>
                         <li><a href="game.html">Game</a></li>
+                        <li><a href="data.html">History / Data</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="prose">
                 <section>
-                    <h2>data summary</h2>
-                    <dl>
+                    <h2>data collection</h2>
+                    <p>
+                        this app uses your browser's localStorage feature to keep track of the
+                        colors you use in the color contrast checker and the guesses that you make
+                        in the game. no personal data is stored about you, and the data never leaves
+                        the browser.
+                    </p>
+                    <button class="block-button" id="clear-history-button">clear history</button>
+                </section>
+                <section>
+                    <h2>statistics</h2>
+                    <h3>calculator data</h3>
+                    <dl class="stats">
                         <dt>total colors contrasted:</dt>
                         <dd id="total-colors">loading...</dd>
-                    </dl>
-                    <dl>
                         <dt>average contrast:</dt>
                         <dd id="average-contrast">loading...</dd>
                     </dl>
-                    <button id="clear-history-button">clear history</button>
+                    <h3>game data</h3>
+                    <dl class="stats">
+                        <dt>correct</dt>
+                        <dd id="num-correct">loading...</dd>
+                        <dt>incorrect</dt>
+                        <dd id="num-wrong">loading...</dd>
+                        <dt>win %</dt>
+                        <dd id="win-pct">loading...</dd>
+                    </dl>
                 </section>
                 <section>
                     <h2>past colors</h2>
