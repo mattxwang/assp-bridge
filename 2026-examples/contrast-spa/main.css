@@ -1,0 +1,98 @@
+/*
+  Name: matt wang + you!
+
+  This is the scaffold color contrast example we'll use throughout week 3. This is
+  the "first" scaffold, which only uses features discussed in week 2, and implements
+  the project 2 spec reasonably well. You are free to edit and reuse this content
+  for project 3!
+*/
+
+body {
+    box-sizing: border-box; /* This is the alternate box model! Be careful! */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+
+    /* native font stack - see: https://systemfontstack.com/  */
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "avenir next",
+        "avenir",
+        "segoe ui",
+        "helvetica neue",
+        "helvetica",
+        "Cantarell",
+        "Ubuntu",
+        "roboto",
+        "noto",
+        "arial",
+        sans-serif;
+}
+
+.prose {
+    padding: 0 1rem;
+}
+
+.form-group {
+    margin: 0.75em 0;
+}
+
+.colour-message {
+    display: flex;
+    padding: 0.25em;
+}
+
+.colour-circle {
+    height: 1em;
+    width: 1em;
+    align-self: center;
+    display: inline-block;
+    border-radius: 100rem;
+}
+
+.navbar {
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
+}
+
+.nav-links ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.block-button {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.block-button:hover {
+    cursor: pointer;
+}
+
+#app {
+    max-width: 768px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+#sample-text {
+    margin: 1rem 0;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+#color-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
